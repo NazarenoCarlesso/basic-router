@@ -91,13 +91,13 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 
 .horizontal-nav li {
   display: block;
   flex-grow: 1;
   text-align: center;
-  padding: 0;
 }
 
 .horizontal-nav li a {
