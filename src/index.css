@@ -15,6 +15,14 @@ code {
     monospace;
 }
 
+a {
+  color: white;
+}
+
+.nav-active {
+  color: rgb(91, 160, 203);
+  transition: all .3s ease-out;
+}
 
 .main-layout {
   display: flex;
@@ -24,7 +32,6 @@ code {
 nav {
   background-color: #363a45;
   height: 100vh;
-  margin-right: 15px;
   overflow-y: scroll;
   text-align: center;
   width: 250px;
@@ -47,11 +54,6 @@ nav li a {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
-}
-
-.nav-active {
-  color: grey;
-  transition: all .3s ease-out;
 }
 
 /* width */
@@ -77,4 +79,28 @@ nav li a {
 
 h1 {
   color: #ebf5ff;
+}
+
+.layout {
+  background-color: #2c313a;
+  width: 100%;
+}
+
+.horizontal-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.horizontal-nav li {
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+  padding: 0;
+}
+
+.horizontal-nav li a {
+  font-size: 1.2rem;
+  text-decoration: none;
 }

@@ -10,7 +10,7 @@ const Navigation = () => {
         <BrowserRouter>
           <div className="main-layout">
             <nav style={{ overflowY: 'auto' }}>
-              <img src={logo} alt='logo' style={{ width: 140 }} />
+              <img src={logo} alt='logo' style={{ width: 140, marginTop: '20px' }} />
               <ul>
                 {
                   routes.map(({ to, name }) => (
