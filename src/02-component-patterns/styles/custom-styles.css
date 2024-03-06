@@ -1,0 +1,42 @@
+.bg-dark {
+  background-color: rgb(56, 56, 56);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.custom-image {
+  border-radius: 20px;
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+
+.custom-buttons button {
+  color: white;
+  border-color: white;
+}
+
+.custom-buttons div {
+  border-color: white;
+}
+
+.blue-border {
+  color: #a4d5ff;
+}
+
+.blue-border button {
+  color: #a4d5ff;
+  border-color: #a4d5ff;
+  font-weight: bold;
+}
+
+.blue-border div {
+  padding-top: 0;
+  font-size: 17px;
+  border-color: #a4d5ff;
+}

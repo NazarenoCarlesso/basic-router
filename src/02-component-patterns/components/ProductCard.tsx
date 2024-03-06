@@ -9,12 +9,12 @@ import ProductButtons from './ProductButtons'
 export const ProductContext = createContext<ProductContextProps>({} as ProductContextProps)
 const { Provider } = ProductContext
 
-const ProductCard = ({ product, children }: ProductCardProps) => {
+const ProductCard = ({ product, children, className, style }: ProductCardProps) => {
   const { counter, increaseBy } = useProduct()
 
   return (
     <Provider value={{ counter, increaseBy, product }}>
-      <div className={styles.productCard}>
+      <div className={`${styles.productCard} ${className}`} style={style}>
         {children}
       </div>
     </Provider>
