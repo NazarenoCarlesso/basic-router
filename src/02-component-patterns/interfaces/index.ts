@@ -5,6 +5,8 @@ export interface ProductCardProps {
   product: Product
   className?: string
   style?: React.CSSProperties
+  onChange?: (args: onChangeArgs) => void
+  value?: number
 }
 
 export interface Product {
@@ -33,4 +35,17 @@ export interface ProductImageProps {
 export interface ProductButtonsProps {
   className?: string
   style?: React.CSSProperties
+}
+
+export interface ProductInCart extends Product {
+  count: number
+}
+
+export interface ShoppingCart {
+  [key: string]: ProductInCart
+}
+
+export interface onChangeArgs {
+  product: Product
+  count: number
 }

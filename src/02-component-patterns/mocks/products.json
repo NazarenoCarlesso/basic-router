@@ -1,11 +1,12 @@
 [
   {
     "id": "1",
-    "title": "Coffee Mug",
+    "title": "Coffee Mug - Card",
     "img": "./coffee-mug.png"
   },
   {
     "id": "2",
-    "title": "No Item"
+    "title": "Coffee Mug - Meme",
+    "img": "./coffee-mug2.png"
   }
 ]

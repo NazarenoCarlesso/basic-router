@@ -7,7 +7,7 @@
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .custom-image {
@@ -23,6 +23,7 @@
 
 .custom-buttons div {
   border-color: white;
+  padding-top: 0;
 }
 
 .blue-border {
@@ -39,4 +40,10 @@
   padding-top: 0;
   font-size: 17px;
   border-color: #a4d5ff;
+}
+
+.shopping-cart {
+  position: fixed;
+  right: 10px;
+  top: 0px;
 }
