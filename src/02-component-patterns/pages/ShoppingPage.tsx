@@ -1,28 +1,13 @@
-import { useState } from 'react'
 import ProductCard, { ProductButtons, ProductImage, ProductTitle } from '../components/ProductCard'
-import { Product, ShoppingCart } from '../interfaces'
+import { Product } from '../interfaces'
 import productsMock from '../mocks/products.json'
 import '../styles/custom-styles.css'
-import { onChangeArgs } from '../interfaces/index';
+import useShoppingCart from '../hooks/useShoppingCart'
+
+const products: Product[] = productsMock
 
 const ShoppingPage = () => {
-  const products: Product[] = productsMock
-
-  const [shoppingCart, setShoppingCart] = useState<ShoppingCart>({})
-
-  const onProductCountChange = ({ product, count }: onChangeArgs) => {
-    setShoppingCart(prevShoppingCart => {
-      if (count === 0) {
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const { [product.id]: toDelete, ...rest } = prevShoppingCart
-        return rest
-      }
-      return {
-        ...prevShoppingCart,
-        [product.id]: { ...product, count }
-      }
-    })
-  }
+  const { shoppingCart, onProductCountChange } = useShoppingCart()
 
   return (
     <div>

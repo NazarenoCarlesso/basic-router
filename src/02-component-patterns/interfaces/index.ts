@@ -49,3 +49,8 @@ export interface onChangeArgs {
   product: Product
   count: number
 }
+
+export interface useShoppingCartReturn {
+  shoppingCart: ShoppingCart,
+  onProductCountChange: (args: onChangeArgs) => void
+}
