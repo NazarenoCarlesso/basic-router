@@ -1,9 +1,8 @@
 import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
+import {
+  RegisterPage, FormikAbstraction, FormikBasicPage, FormikComponents, FormikYupPage
+} from "../03-forms/pages";
 import logo from '../logo.svg'
-import { RegisterPage } from "../03-forms/pages/RegisterPage";
-import { FormikBasicPage } from "../03-forms/pages/FormikBasicPage";
-import { FormikYupPage } from "../03-forms/pages/FormikYupPage";
-import { FormikComponents } from "../03-forms/pages/FormikComponents";
 
 const isActive = ({ isActive }: { isActive: boolean }) => isActive ? 'nav-active' : '';
 
@@ -28,6 +27,9 @@ const Navigation = () => {
                 <NavLink to='/formik-components' className={isActive}>Formik Components</NavLink>
               </li>
               <li>
+                <NavLink to='/formik-abstraction' className={isActive}>Formik Abstraction</NavLink>
+              </li>
+              <li>
                 <NavLink to='/users' className={isActive}>Users</NavLink>
               </li>
             </ul>
@@ -37,6 +39,7 @@ const Navigation = () => {
             <Route path='formik-basic' element={<FormikBasicPage />} />
             <Route path='formik-yup' element={<FormikYupPage />} />
             <Route path='formik-components' element={<FormikComponents />} />
+            <Route path='formik-abstraction' element={<FormikAbstraction />} />
             <Route path='about' element={<h1>About Page</h1>} />
             <Route path='users' element={<h1>Users Page</h1>} />
             <Route path='home' element={<h1>Home Page</h1>} />
