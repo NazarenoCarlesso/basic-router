@@ -45,8 +45,7 @@ export const FormikAbstraction = () => {
               <MyTextInput name="lastName" label="Last Name" />
               <MyTextInput name="email" label="Email" />
               <MyCheckbox name="terms" label="Terms & Conditions" />
-              <MySelect name="jobType" label="Job Type">
-                <option value="">Pick something</option>
+              <MySelect name="jobType" label="Job Type" placeholder="Pick Something">
                 <option value="developer">Developer</option>
                 <option value="designer">Designer</option>
                 <option value="it-senior">IT Senior</option>

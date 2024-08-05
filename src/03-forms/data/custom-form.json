@@ -1,0 +1,57 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "placeholder": "Nazareno",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      }
+    ]
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "placeholder": "Carlesso",
+    "label": "Last Name",
+    "value": ""
+  },
+  {
+    "type": "input",
+    "name": "email",
+    "placeholder": "nazareno@gmail.com",
+    "label": "Email",
+    "value": ""
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "placeholder": "Grand Theft Auto",
+    "label": "Favorite Game",
+    "value": "",
+    "options": [
+      {
+        "id": 1,
+        "label": "Super Smash"
+      },
+      {
+        "id": 2,
+        "label": "Metal Gear"
+      },
+      {
+        "id": 3,
+        "label": "Resident Evil"
+      },
+      {
+        "id": 4,
+        "label": "Silent Hill"
+      },
+      {
+        "id": 5,
+        "label": "Snow Bros"
+      }
+    ]
+  }
+]

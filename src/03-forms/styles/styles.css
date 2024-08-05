@@ -6,20 +6,42 @@ form {
 
 input, select {
     margin-top: 5px;
+    margin-bottom: 3px;
     outline: none;
     padding: 10px;
+    color: white;
+    background-color: #17253251;
+    border: 2px solid #57769351;
+    border-radius: 10px;
 }
 
 
 button {
     margin-top: 20px;
     padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #33516d51;
+    border: 2px solid #5c8bb751;
 }
 
 span, .error-message {
     color: red;
+    font-size: 11px;
 }
 
 .has-error {
     border: 1px solid red;
+}
+
+label {
+    margin-top: 6px;
+}
+
+code {
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #1e2429;
+    padding: 6px;
+    border-radius: 10px;
 }
